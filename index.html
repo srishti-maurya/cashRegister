@@ -16,10 +16,14 @@
       </p>
       <label for="bill-amount">Bill Amount:</label>
       <input type="number" id="bill-amount" />
+      <button onclick="hiddenPart1()">Next</button>
+      <div id="hiddenArea">
       <label for="cash-received">Cash Given:</label>
       <input type="number" id="cash-received" />
-      <button id="check-button">Check</button>
+      <button id="check-button" onclick="hiddenPart2()">Check</button>
       <p id="error-message"></p>
+    </div>
+    <div id="hiddenArea2">
       <table>
         <caption>
           Return Change
@@ -46,6 +50,7 @@
         </tr>
         <th>No. of Notes</th>
       </table>
+    </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
   </body>

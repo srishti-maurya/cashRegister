@@ -32,3 +32,21 @@ function calculateChange(amountToBeReturned) {
 function showMessage(msg) {
   message.innerText = "Error: " + msg;
 }
+
+function hiddenPart1(){
+  var x = document.getElementById("hiddenArea");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function hiddenPart2(){
+  var y = document.getElementById("hiddenArea2");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "block";
+  }
+}

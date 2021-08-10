@@ -3,3 +3,11 @@
     flex-direction: column;
     width: 50vw;
 }
+
+#hiddenArea{
+    display: none;
+}
+
+#hiddenArea2{
+    display: none;
+}

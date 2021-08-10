@@ -1,7 +1,26 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap');
+:root{
+    --bgColor:#EEEEEE;
+    --highlightColor: #19D3DA;
+    --primaryColor:#373A40;
+    --secondaryColor:#686D76;
+}
+body{
+    background-color:var(--bgColor);
+    text-align: center;
+
+}
+img{
+    max-width: 27%;
+}
+
+h1{
+    color: var(--highlightColor);
+    font-family: 'Anton', sans-serif;
+}
+p{
+    color: var(--primaryColor);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #hiddenArea{
@@ -10,4 +29,13 @@
 
 #hiddenArea2{
     display: none;
+
+}
+
+button{
+    margin-bottom: 1rem;
+}
+
+caption{
+    text-align: center;
 }

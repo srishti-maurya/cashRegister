@@ -3,55 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Cash Register Manager</title>
   </head>
   <body>
     <div class="container">
       <h1>Cash Register Manager</h1>
+      <img src="https://ae01.alicdn.com/kf/HTB1gFMKSgHqK1RjSZFgq6y7JXXai/C-50-electronic-cash-registers-cash-register-POS-cash-register-8V-Multifunctional-Catering-cash-register-for.jpg_Q90.jpg_.webp" alt="Responsive image">
       <p>
         Enter the bill amount and cash given by the customer and know minimum
         number of notes to return.
       </p>
-      <label for="bill-amount">Bill Amount:</label>
-      <input type="number" id="bill-amount" />
-      <button onclick="hiddenPart1()">Next</button>
+      <div class="billAmountInputArea">
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Bill Amount:</span>
+        </div>
+        <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="bill-amount" >
+      </div>
+      <button onclick="hiddenPart1()" type="button" class="btn btn-outline-secondary">Next</button>
+    </div>
       <div id="hiddenArea">
-      <label for="cash-received">Cash Given:</label>
-      <input type="number" id="cash-received" />
-      <button id="check-button" onclick="hiddenPart2()">Check</button>
-      <p id="error-message"></p>
-    </div>
-    <div id="hiddenArea2">
-      <table>
-        <caption>
-          Return Change
-        </caption>
-        <tr>
-          <th>No. of Notes</th>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-        </tr>
-        <tr>
-          <th>Note</th>
-          <td>2000</td>
-          <td>500</td>
-          <td>100</td>
-          <td>20</td>
-          <td>10</td>
-          <td>5</td>
-          <td>1</td>
-        </tr>
-        <th>No. of Notes</th>
-      </table>
-    </div>
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Cash Given:</span>
+          </div>
+          <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="cash-received" >
+        </div>
+        
+        <button id="check-button" onclick="hiddenPart2()" type="button" class="btn btn-outline-secondary">Check</button>
+        <p id="error-message"></p>
+
+        <div id="hiddenArea2" class="table-responsive">
+          <table class="table">
+            <caption>
+              Return Change
+            </caption>
+            <tr>
+              <th class="table-warning">No. of Notes</th>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+              <td class="no-of-notes table-info"></td>
+            </tr>
+            <tr class="table-warning">
+              <th>Note</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+           
+          </table>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
 </html>
